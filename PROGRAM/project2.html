@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Doument Object Model)</title>
+    <!--internal css-->
+    <style>
+        .txt_component
+        {
+            width: 35%;
+            /*margin: 10px;*/
+            padding: 10px;
+            margin-left: 30px;
+        }
+        .btn_component
+        {
+            border-radius: 10px;
+            height: 50px;
+            min-width: 100px;
+            background: #FF0000;
+            color : #FFFFFF;
+            margin-top: 30px;
+            cursor: pointer;
+            outline: 0;
+            border: 2px solid #000000;
+        }
+        .btn2_component
+        {
+            border-radius: 10px;
+            height: 50px;
+            min-width: 100px;
+            color: #FF0000;
+            background: #FFFFFF;
+            margin-top: 30px;
+            cursor: pointer;
+            outline: 0;
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- area utama -->
+ <main>
+    <!--area nama-->
+    <section>
+     <!--label nama-->
+    <label for="txt_nama" id="lbl_nama">Nama Mahasiswa</label>
+    <!--textbox nama-->
+    <input type="text" name="" id="txt_nama" maxlength="10" 
+    placeholder="isi nama mahasiswa" class="txt_component">
+</section>
+<!--area button-->
+<section>
+    <!--button proses-->
+    <button id="btn_proses" class="btn_component">proses</button>
+    <!--tombol reset-->
+    <button id="btn_reset" class="btn2_component" onclick="setReset()">reset</button>
+</section>
+ </main>   
+
+ <!--kode js (java scrip)-->
+ <script>
+    //buat variable yang diambil dari component
+    let txt_nama = document.querySelector("#txt_nama");
+    let btn_proses = document.querySelector("#btn_proses")
+
+    //proses
+    // addeventlistener
+    btn_proses.addEventListener("click",function(){
+
+        //jika "txt_nama" tidak diisi
+        if(txt_nama.value == "")
+        {
+            alert("nama mahasiswa harus diisi")
+        }
+
+        //jika "txt_nama" diisi
+        else
+        {
+        //  tampilkan alert
+        alert(`Nama Mahasiswa : ${txt_nama.value}`);
+        }
+
+
+
+       
+   })
+
+   //panggil fungsi setreset
+   //btn_proses.addEventListener("click",setReset)
+       
+    
+    // buat fungsi untuk reset data
+    function setReset()
+        {
+            //perintah untuk reload halaman
+            location.reload();
+
+            //code dibawah adalah untuk berpindah website ditab yang sama(direct link)
+            location.href="https://teknokrat.ac.id";
+
+            //kode dibawah adalah untuk membuka website lain tapi membuka tab baru
+            //digunakan saat membuka website lain
+            //window.open("https://teknokrat.ac.id");
+
+            //code dibawah ini adalah untuk memanggil fungsi dari button proses
+            //btn_proses.click();
+        }
+    
+
+ </script>
+</body>
+</html>
