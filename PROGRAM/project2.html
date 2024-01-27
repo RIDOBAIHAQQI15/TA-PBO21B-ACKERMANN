@@ -121,141 +121,62 @@
     </div>
 
     <script>
-        function tampilkanNama(angka) {
-            alert('Nama: ' + angka);
-            // Anda dapat mengganti alert dengan logika atau aksi lain yang diinginkan.
-        }
+    // Memeriksa apakah localStorage sudah berisi informasi terakhir
+    if (localStorage.getItem('lastAnswer')) {
+        alert('Jawaban Terakhir: ' + localStorage.getItem('lastAnswer'));
+    }
 
-        function A() {
-            let audio = new Audio("A.mp3");
-            audio.play()
-        }
+    function tampilkanNama(angka) {
+        alert('Nama: ' + angka);
+        // Anda dapat mengganti alert dengan logika atau aksi lain yang diinginkan.
+        // Simpan jawaban terakhir ke localStorage
+        localStorage.setItem('lastAnswer', angka);
+    }
 
-        function B() {
-            var audio = new Audio('B.mp3');
-            audio.play();
-        }
+    function playAudio(audioFile) {
+        var audio = new Audio(audioFile);
+        audio.play();
+    }
 
-        function C() {
-            var audio = new Audio('C.mp3');
-            audio.play();
-        }
+    function resetButtonColor(buttonId) {
+        // Mengembalikan warna tombol ke warna asal
+        document.getElementById(buttonId).style.backgroundColor = '#3498db';
+    }
 
-        function D() {
-            var audio = new Audio('D.mp3');
-            audio.play();
-        }
+    function A() {
+        playAudio('A.mp3');
+        resetButtonColor('A');
+        tampilkanNama('A');
+    }
 
-        function E() {
-            var audio = new Audio('E.mp3');
-            audio.play();
-        }
+    function B() {
+        playAudio('B.mp3');
+        resetButtonColor('B');
+        tampilkanNama('B');
+    }
 
-        function F() {
-            var audio = new Audio('F.mp3');
-            audio.play();
-        }
+    // ... (Tambahkan fungsi untuk huruf lainnya dan reset warna tombol) ...
 
-        function G() {
-            var audio = new Audio('G.mp3');
-            audio.play();
-        }
+    function Z() {
+        playAudio('Z.mp3');
+        resetButtonColor('Z');
+        tampilkanNama('Z');
+    }
 
-        function H() {
-            var audio = new Audio('H.mp3');
-            audio.play();
-        }
+    // Menambahkan event listener untuk mengubah warna tombol saat dihover
+    document.querySelectorAll('.huruf').forEach(function (button) {
+        button.addEventListener('mouseover', function () {
+            this.style.backgroundColor = '#2980b9';
+        });
+    });
 
-        function I() {
-            var audio = new Audio('I.mp3');
-            audio.play();
+    // Menangani keydown event pada input untuk pindah ke tombol cek jawaban
+    document.getElementById('answerInput').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            document.getElementById('cekJawaban').focus();
         }
-
-        function J() {
-            var audio = new Audio('J.mp3');
-            audio.play();
-        }
-
-        function K() {
-            var audio = new Audio('K.mp3');
-            audio.play();
-        }
-
-        function L() {
-            var audio = new Audio('L.mp3');
-            audio.play();
-        }
-
-        function M() {
-            var audio = new Audio('M.mp3');
-            audio.play();
-        }
-
-        function N() {
-            var audio = new Audio('N.mp3');
-            audio.play();
-        }
-
-        function O() {
-            var audio = new Audio('O.mp3');
-            audio.play();
-        }
-
-        function P() {
-            var audio = new Audio('P.mp3');
-            audio.play();
-        }
-
-        function Q() {
-            var audio = new Audio('Q.mp3');
-            audio.play();
-        }
-
-        function R() {
-            var audio = new Audio('R.mp3');
-            audio.play();
-        }
-
-        function S() {
-            var audio = new Audio('S.mp3');
-            audio.play();
-        }
-
-        function T() {
-            var audio = new Audio('T.mp3');
-            audio.play();
-        }
-
-        function U() {
-            var audio = new Audio('U.mp3');
-            audio.play();
-        }
-
-        function V() {
-            var audio = new Audio('V.mp3');
-            audio.play();
-        }
-
-        function W() {
-            var audio = new Audio('W.mp3');
-            audio.play();
-        }
-
-        function X() {
-            var audio = new Audio('X.mp3');
-            audio.play();
-        }
-
-        function Y() {
-            var audio = new Audio('Y.mp3');
-            audio.play();
-        }
-
-        function Z() {
-            var audio = new Audio('Z.mp3');
-            audio.play();
-        }
-    </script>
+    });
+</script>
 </body>
 
 </html>
