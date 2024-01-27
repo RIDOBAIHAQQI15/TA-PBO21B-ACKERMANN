@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -125,15 +125,13 @@
             }
         });
 
-        generateQuestion();
-
-            // Menangani keydown event pada input untuk pindah ke tombol cek jawaban
-    document.getElementById('answerInput').addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent the default form submission behavior
-            checkAnswer(); // Call the checkAnswer function
-        }
-    });
+        // Menangani keydown event pada input untuk pindah ke tombol cek jawaban
+        document.getElementById('answerInput').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Mencegah perilaku pengiriman formulir default
+                checkAnswer(); // Panggil fungsi checkAnswer
+            }
+        });
     </script>
 </body>
 
