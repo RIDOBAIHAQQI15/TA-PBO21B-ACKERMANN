@@ -60,70 +60,323 @@
 </head>
 <body class="background">
   <div class="angka-container">
-    <div class="angka" onclick="tampilkanNama('1')">1<div class="nama">Satu</div></div>
-    <div class="angka" onclick="tampilkanNama('2')">2<div class="nama">Dua</div></div>
-    <div class="angka" onclick="tampilkanNama('3')">3<div class="nama">Tiga</div></div>
-    <div class="angka" onclick="tampilkanNama('4')">4<div class="nama">Empat</div></div>
-    <div class="angka" onclick="tampilkanNama('5')">5<div class="nama">Lima</div></div>
-    <div class="angka" onclick="tampilkanNama('6')">6<div class="nama">Enam</div></div>
-    <div class="angka" onclick="tampilkanNama('7')">7<div class="nama">Tujuh</div></div>
-    <div class="angka" onclick="tampilkanNama('8')">8<div class="nama">Delapan</div></div>
-    <div class="angka" onclick="tampilkanNama('9')">9<div class="nama">Sembilan</div></div>
-    <div class="angka" onclick="tampilkanNama('10')">10<div class="nama">sepuluh</div></div>
-    <div class="angka" onclick="tampilkanNama('11')">11<div class="nama">sebelas</div></div>
-    <div class="angka" onclick="tampilkanNama('12')">12<div class="nama">duabelas</div></div>
-    <div class="angka" onclick="tampilkanNama('13')">13<div class="nama">tigabelas</div></div>
-    <div class="angka" onclick="tampilkanNama('14')">14<div class="nama">empatbelas</div></div>
-    <div class="angka" onclick="tampilkanNama('15')">15<div class="nama">limabelas</div></div>
-    <div class="angka" onclick="tampilkanNama('16')">16<div class="nama">enambelas</div></div>
-    <div class="angka" onclick="tampilkanNama('17')">17<div class="nama">tujuhbelas</div></div>
-    <div class="angka" onclick="tampilkanNama('18')">18<div class="nama">delapanbelas</div></div>
-    <div class="angka" onclick="tampilkanNama('19')">19<div class="nama">sembilanbelas</div></div>
-    <div class="angka" onclick="tampilkanNama('20')">20<div class="nama">duapuluh</div></div>
-    <div class="angka" onclick="tampilkanNama('21')">21<div class="nama">duasatu</div></div>
-    <div class="angka" onclick="tampilkanNama('22')">22<div class="nama">duadua</div></div>
-    <div class="angka" onclick="tampilkanNama('23')">23<div class="nama">duatiga</div></div>
-    <div class="angka" onclick="tampilkanNama('24')">24<div class="nama">duaempat</div></div>
-    <div class="angka" onclick="tampilkanNama('25')">25<div class="nama">dualima</div></div>
-    <div class="angka" onclick="tampilkanNama('26')">26<div class="nama">duaenam</div></div>
-    <div class="angka" onclick="tampilkanNama('27')">27<div class="nama">duatujuh</div></div>
-    <div class="angka" onclick="tampilkanNama('28')">28<div class="nama">duadelapan</div></div>
-    <div class="angka" onclick="tampilkanNama('29')">29<div class="nama">duasembilan</div></div>
-    <div class="angka" onclick="tampilkanNama('30')">30<div class="nama">tigapuluh</div></div>
-    <div class="angka" onclick="tampilkanNama('31')">31<div class="nama">tigasatu</div></div>
-    <div class="angka" onclick="tampilkanNama('32')">32<div class="nama">tigadua</div></div>
-    <div class="angka" onclick="tampilkanNama('33')">33<div class="nama">tigatiga</div></div>
-    <div class="angka" onclick="tampilkanNama('34')">34<div class="nama">tigaempat</div></div>
-    <div class="angka" onclick="tampilkanNama('35')">35<div class="nama">tigalima</div></div>
-    <div class="angka" onclick="tampilkanNama('36')">36<div class="nama">tigaenam</div></div>
-    <div class="angka" onclick="tampilkanNama('37')">37<div class="nama">tigatujuh</div></div>
-    <div class="angka" onclick="tampilkanNama('38')">38<div class="nama">tigadelapan</div></div>
-    <div class="angka" onclick="tampilkanNama('39')">39<div class="nama">tigasembilan</div></div>
-    <div class="angka" onclick="tampilkanNama('40')">40<div class="nama">empatpuluh</div></div>
-    <div class="angka" onclick="tampilkanNama('41')">41<div class="nama">empatsatu</div></div>
-    <div class="angka" onclick="tampilkanNama('42')">42<div class="nama">empatdua</div></div>
-    <div class="angka" onclick="tampilkanNama('43')">43<div class="nama">empattiga</div></div>
-    <div class="angka" onclick="tampilkanNama('44')">44<div class="nama">empatempat</div></div>
-    <div class="angka" onclick="tampilkanNama('45')">45<div class="nama">empatlima</div></div>
-    <div class="angka" onclick="tampilkanNama('46')">46<div class="nama">empatenam</div></div>
-    <div class="angka" onclick="tampilkanNama('47')">47<div class="nama">empattujuh</div></div>
-    <div class="angka" onclick="tampilkanNama('48')">48<div class="nama">empatdelapan</div></div>
-    <div class="angka" onclick="tampilkanNama('49')">49<div class="nama">empatsembilan</div></div>
-    <div class="angka" onclick="tampilkanNama('50')">50<div class="nama">limapuluh</div></div>
+    <div class="angka" onclick="playAngkaAudio('1', 'satu')">1<div class="nama">Satu</div></div>
+    <div class="angka" onclick="playAngkaAudio('2', 'dua')">2<div class="nama">Dua</div></div>
+    <div class="angka" onclick="playAngkaAudio('3', 'tiga')">3<div class="nama">Tiga</div></div>
+    <div class="angka" onclick="playAngkaAudio('4', 'empat')">4<div class="nama">Empat</div></div>
+    <div class="angka" onclick="playAngkaAudio('5', 'lima')">5<div class="nama">Lima</div></div>
+    <div class="angka" onclick="playAngkaAudio('6', 'enam')">6<div class="nama">Enam</div></div>
+    <div class="angka" onclick="playAngkaAudio('7', 'tujuh')">7<div class="nama">Tujuh</div></div>
+    <div class="angka" onclick="playAngkaAudio('8', 'delapan')">8<div class="nama">Delapan</div></div>
+    <div class="angka" onclick="playAngkaAudio('9', 'sembilan')">9<div class="nama">Sembilan</div></div>
+    <div class="angka" onclick="playAngkaAudio('10', 'sepuluh')">10<div class="nama">Sepuluh</div></div>
+    <!-- Lanjutkan sampai 50 -->
+    <div class="angka" onclick="playAngkaAudio('11', 'sebelas')">11<div class="nama">Sebelas</div></div>
+    <div class="angka" onclick="playAngkaAudio('12', 'dua belas')">12<div class="nama">Dua Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('13', 'tiga belas')">13<div class="nama">Tiga Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('14', 'empat belas')">14<div class="nama">Empat Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('15', 'lima belas')">15<div class="nama">Lima Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('16', 'enam belas')">16<div class="nama">Enam Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('17', 'tujuh belas')">17<div class="nama">Tujuh Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('18', 'delapan belas')">18<div class="nama">Delapan Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('19', 'sembilan belas')">19<div class="nama">Sembilan Belas</div></div>
+    <div class="angka" onclick="playAngkaAudio('20', 'dua puluh')">20<div class="nama">Dua Puluh</div></div>
+    <div class="angka" onclick="playAngkaAudio('21', 'dua puluh satu')">21<div class="nama">Dua Puluh Satu</div></div>
+    <div class="angka" onclick="playAngkaAudio('22', 'dua puluh dua')">22<div class="nama">Dua Puluh Dua</div></div>
+    <div class="angka" onclick="playAngkaAudio('23', 'dua puluh tiga')">23<div class="nama">Dua Puluh Tiga</div></div>
+    <div class="angka" onclick="playAngkaAudio('24', 'dua puluh empat')">24<div class="nama">Dua Puluh Empat</div></div>
+    <div class="angka" onclick="playAngkaAudio('25', 'dua puluh lima')">25<div class="nama">Dua Puluh Lima</div></div>
+    <div class="angka" onclick="playAngkaAudio('26', 'dua puluh enam')">26<div class="nama">Dua Puluh Enam</div></div>
+    <div class="angka" onclick="playAngkaAudio('27', 'dua puluh tujuh')">27<div class="nama">Dua Puluh Tujuh</div></div>
+    <div class="angka" onclick="playAngkaAudio('28', 'dua puluh delapan')">28<div class="nama">Dua Puluh Delapan</div></div>
+    <div class="angka" onclick="playAngkaAudio('29', 'dua puluh sembilan')">29<div class="nama">Dua Puluh Sembilan</div></div>
+    <div class="angka" onclick="playAngkaAudio('30', 'tiga puluh')">30<div class="nama">Tiga Puluh</div></div>
+    <div class="angka" onclick="playAngkaAudio('31', 'tiga puluh satu')">31<div class="nama">Tiga Puluh Satu</div></div>
+    <div class="angka" onclick="playAngkaAudio('32', 'tiga puluh dua')">32<div class="nama">Tiga Puluh Dua</div></div>
+    <div class="angka" onclick="playAngkaAudio('33', 'tiga puluh tiga')">33<div class="nama">Tiga Puluh Tiga</div></div>
+    <div class="angka" onclick="playAngkaAudio('34', 'tiga puluh empat')">34<div class="nama">Tiga Puluh Empat</div></div>
+    <div class="angka" onclick="playAngkaAudio('35', 'tiga puluh lima')">35<div class="nama">Tiga Puluh Lima</div></div>
+    <div class="angka" onclick="playAngkaAudio('36', 'tiga puluh enam')">36<div class="nama">Tiga Puluh Enam</div></div>
+    <div class="angka" onclick="playAngkaAudio('37', 'tiga puluh tujuh')">37<div class="nama">Tiga Puluh Tujuh</div></div>
+    <div class="angka" onclick="playAngkaAudio('38', 'tiga puluh delapan')">38<div class="nama">Tiga Puluh Delapan</div></div>
+    <div class="angka" onclick="playAngkaAudio('39', 'tiga puluh sembilan')">39<div class="nama">Tiga Puluh Sembilan</div></div>
+    <div class="angka" onclick="playAngkaAudio('40', 'empat puluh')">40<div class="nama">Empat Puluh</div></div>
+    <div class="angka" onclick="playAngkaAudio('41', 'empat puluh satu')">41<div class="nama">Empat Puluh Satu</div></div>
+    <div class="angka" onclick="playAngkaAudio('42', 'empat puluh dua')">42<div class="nama">Empat Puluh Dua</div></div>
+    <div class="angka" onclick="playAngkaAudio('43', 'empat puluh tiga')">43<div class="nama">Empat Puluh Tiga</div></div>
+    <div class="angka" onclick="playAngkaAudio('44', 'empat puluh empat')">44<div class="nama">Empat Puluh Empat</div></div>
+    <div class="angka" onclick="playAngkaAudio('45', 'empat puluh lima')">45<div class="nama">Empat Puluh Lima</div></div>
+    <div class="angka" onclick="playAngkaAudio('46', 'empat puluh enam')">46<div class="nama">Empat Puluh Enam</div></div>
+    <div class="angka" onclick="playAngkaAudio('47', 'empat puluh tujuh')">47<div class="nama">Empat Puluh Tujuh</div></div>
+    <div class="angka" onclick="playAngkaAudio('48', 'empat puluh delapan')">48<div class="nama">Empat Puluh Delapan</div></div>
+    <div class="angka" onclick="playAngkaAudio('49', 'empat puluh sembilan')">49<div class="nama">Empat Puluh Sembilan</div></div>
+    <div class="angka" onclick="playAngkaAudio('50', 'lima puluh')">50<div class="nama">Lima Puluh</div></div>
   </div>
 
   <script>
-    function tampilkanNama(angka) {
-      alert('Nama: ' + angka);
+    function playAudio(audioFile) {
+      var audio = new Audio(audioFile);
+      audio.play();
+    }
+
+    function playAngkaAudio(angka, nama) {
+      playAudio(angka + '.mp3');
+      tampilkanNama(nama);
+    }
+
+    function tampilkanNama(nama) {
+      alert('Nama: ' + nama);
       // Anda dapat mengganti alert dengan logika atau aksi lain yang diinginkan.
     }
 
-     // ... (Tambahkan fungsi untuk huruf lainnya dan reset warna tombol) ...
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
 
-     function 1() {
-        playAudio('1.mp3');
-        resetButtonColor('1');
-        tampilkanNama('1');
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
+    }
+
+    function playAngkaSatu() {
+      playAudio('1.mp3');
+      tampilkanNama('Satu');
     }
   </script>
 </body>
