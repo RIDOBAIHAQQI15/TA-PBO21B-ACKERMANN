@@ -15,7 +15,6 @@
             background-image: url('bganak.jpg');
         }
 
-    
         h1 {
             color: #000000;
         }
@@ -59,7 +58,7 @@
 
     <div id="question"></div>
     <div id="inputBox">
-        <input type="text" id="answerInput" placeholder="Jawaban">
+        <input type="text" id="answerInput" placeholder="Jawaban" onkeypress="return keyNumber(event)">
         <button onclick="checkAnswer()">Cek Jawaban</button>
     </div>
 
@@ -67,7 +66,8 @@
     <audio id="salahSound" src="salah.mp3"></audio>
 
     <script>
-        
+        let correctAnswer;
+
         function generateQuestion() {
             let number1 = Math.floor(Math.random() * 10) + 1;
             let number2 = Math.floor(Math.random() * 10) + 1;
@@ -75,7 +75,15 @@
             document.getElementById('question').innerHTML = `Berapa ${number1} + ${number2}?`;
 
             correctAnswer = number1 + number2;
-        }
+        } 
+
+        const keyNumber = (event) => {
+            if (event.key >= "0" && event.key <= "9") {
+                return true;
+            } else {
+                return false;
+            }
+        };
 
         function playCorrectSound() {
             document.getElementById('benarSound').play();
